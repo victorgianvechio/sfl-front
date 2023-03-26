@@ -1,8 +1,8 @@
 import DataTable from "react-data-table-component";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 import axios from "axios";
 // import logo from './logo.svg';
@@ -40,8 +40,8 @@ function App() {
 
   const handleApiData = async () => {
     const result = await axios.get(
-      "http://localhost:8080/api/v1/SolarFlareTicket/ranking",
-      // "http://168.138.141.170:8080/api/v1/SolarFlareTicket/ranking",
+      // "http://localhost:8080/api/v1/SolarFlareTicket/ranking",
+      "http://168.138.141.170:8080/api/v1/SolarFlareTicket/ranking",
       {
         headers: {
           Authorization:
